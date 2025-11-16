@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../image/body_bkgnd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+header h1{
+  margin: 0;
+}
+
+main{
+  flex-grow: 1;
+}
+
+nav{
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+
+.blog-list {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.blog-card {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0, 0, 0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.blog-card:hover {
+  transform: scale(1.03);
+}
+.blog-card h2{
+  font-size: 1.3rem;
+  margin: 15px;
+}
+.blog-card p{
+  font-size: 0.95rem;
+  margin: 0 15px 15px;
+  color: #555;
+}
+.blog-card button{
+  margin: 0 15px 15px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.blog-card button:hover{
+  background-color: #555;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: #222;
+  color: #bbb;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Blog</h1>
+    </header>
+
+    <main>
+        <section class="add-post-container">
+            <form id="postForm">
+                <label>Post Title</label>
+                <input type="text" id="title" placeholder="Enter post title" required>
+
+                <label>Thumbnil Image URL</label>
+                <input type="text" id="image" placeholder="Enter image link">
+
+                <label>Post Content</label>
+                <textarea id="content" rows="8" placeholder="Write something..." required></textarea>
+
+                <button type="submit">Publish Post</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="add.js"></script>
+</body>
+</html>
