@@ -29,6 +29,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+.post-container h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
 .post-title {
     margin-top: 0;
 }
@@ -59,6 +64,11 @@ body {
 }
 
 /*Style for comment section*/
+
+.comment-box, .comment-form {
+    max-width: 700px;
+    margin: auto;
+}
 
 .comment-box {
     background: #f1f1f1;
