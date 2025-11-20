@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/Style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/Style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
-<body>
-  <header>
-    <h1>TheDailySpark✨</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="about/about.html">About</a>
-      <a href="add-post/add-post.html">Add Post</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  </head>
+  <body>
+    <header>
+      <h1>TheDailySpark✨</h1>
+      <nav>
+        <div class="menu-toggle" id="menuToggle">
+          ☰
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about/about.html">About</a></li>
+          <li><a href="add-post/add-post.html">Add Post</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
+    <main>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search posts..." />
+      </div>
 
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search posts...">
-  </div>
+      <section class="blog-list">
+        <article class="blog-card">
+          <img src="image/Post1.jpg" alt="Post 1" />
+          <h2>How to Start Blogging</h2>
+          <p>
+            Learn the basics of blogging and how to share your thoughts with the
+            word
+          </p>
+          <button onclick="location.href='post/post.html'">Read More</button>
+        </article>
 
-  <section class="blog-list">
-    <article class="blog-card">
-      <img src="image/Post1.jpg" alt="Post 1">
-      <h2>How to Start Blogging</h2>
-      <p>Learn the basics of blogging and how to share your thoughts with the word</p>
-      <button onclick="location.href='post/post.html'">Read More</button>
-    </article>
+        <article class="blog-card">
+          <img src="image/Post2.jpg" alt="Post 2" />
+          <h2>Writing Engaging Content</h2>
+          <p>Tips and tricks for writing posts your readers will love.</p>
+          <button onclick="location.href='post/post.html'">Read More</button>>
+        </article>
 
-    <article class="blog-card">
-      <img src="image/Post2.jpg" alt="Post 2">
-      <h2>Writing Engaging Content</h2>
-      <p>Tips and tricks for writing posts your readers will love.</p>
-      <button onclick="location.href='post/post.html'">Read More</button>>
-    </article>
+        <article class="blog-card">
+          <img src="image/Post3.jpg" alt="Post 3" />
+          <h2>Designing a Simple Blog</h2>
+          <p>A quick guide to building a clean and modern blog layout.</p>
+          <button onclick="location.href='post/post.html'">Read More</button>
+        </article>
 
-    <article class="blog-card">
-      <img src="image/Post3.jpg" alt="Post 3">
-      <h2>Designing a Simple Blog</h2>
-      <p>A quick guide to building a clean and modern blog layout.</p>
-      <button onclick="location.href='post/post.html'">Read More</button>
-    </article>
+        <article class="blog-card">
+          <img src="image/Post4.jpg" alt="Post 4" />
+          <h2>Photography Blog</h2>
+          <p>A quick oberview of butey of the nature.</p>
+          <button onclick="location.href='post/post.html'">Read More</button>
+        </article>
 
-    <article class="blog-card">
-      <img src="image/Post4.jpg" alt="Post 4">
-      <h2>Photography Blog</h2>
-      <p>A quick oberview of butey of the nature.</p>
-      <button onclick="location.href='post/post.html'">Read More</button>
-    </article>
+        <article class="blog-card">
+          <img src="image/Post5.jpg" alt="Post 4" />
+          <h2>Animels Blog</h2>
+          <p>A quick oberview of butey of the animels.</p>
+          <button onclick="location.href='post/post.html'">Read More</button>
+        </article>
+      </section>
+    </main>
 
-    <article class="blog-card">
-      <img src="image/Post5.jpg" alt="Post 4">
-      <h2>Animels Blog</h2>
-      <p>A quick oberview of butey of the animels.</p>
-      <button onclick="location.href='post/post.html'">Read More</button>
-    </article>
-  </section>
-</main>
+    <footer>
+      <p>© 2025 Simple Blog Platform. All rights reserved.</p>
+    </footer>
 
-  <footer>
-    <p>© 2025 Simple Blog Platform. All rights reserved.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

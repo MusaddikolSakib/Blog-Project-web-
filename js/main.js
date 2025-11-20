@@ -1,7 +1,7 @@
-console.log("JavaScript is working!");
+/*console.log("JavaScript is working!");
 alert("Welcome to The Daily Spark!");
 
-/*
+
 document.querySelectorAll('.blog-card button').forEach(button => {
   button.addEventListener('click', () => {
     alert("Feature coming soon! This will open the full post.");
@@ -28,4 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navList = document.querySelector(".navbar ul");
+
+menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("show");
+});
+
 
