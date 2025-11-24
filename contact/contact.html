@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TheDailySpark</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <h1>TheDailySpark</h1>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../add-post/add-post.html">Add-Post</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have any question or feedback.? Feel free to send us a message!</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="email" placeholder="Your Email">
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p class="success-msg" id="successMsg">Message Sent Successfully!</p>
+        </form>
+    </section>
+    
+    <script src="contact.js"></script>
+</body>
+</html>
