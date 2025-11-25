@@ -38,3 +38,17 @@ menuToggle.addEventListener("click", () => {
 });
 
 
+// Check login state and update menu
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+if (isLoggedIn === "true") {
+    document.getElementById("addPostLink").style.display = "block";
+    document.getElementById("contactLink").style.display = "block";
+
+    document.querySelector('a[href="login,registration/login.html"]').style.display = "none";
+    document.querySelector('a[href="login,registration/register.html"]').style.display = "none";
+
+    document.getElementById("logoutLink").style.display = "block";
+}
+
+

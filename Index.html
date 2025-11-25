@@ -10,16 +10,26 @@
     <header>
       <h1>TheDailySpark✨</h1>
       <nav>
-        <div class="menu-toggle" id="menuToggle">
-          ☰
-        </div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="about/about.html">About</a></li>
-          <li><a href="add-post/add-post.html">Add Post</a></li>
-          <li><a href="contact/contact.html">Contact</a></li>
+          <li>
+            <a href="add-post/add-post.html" id="addPostLink">Add Post</a>
+          </li>
+          <li><a href="contact/contact.html" id="contactLink">Contact</a></li>
+          <li>
+            <a href="login,registration/login.html" id="loginLink">Login</a>
+          </li>
+          <li><a href="login,registration/register.html" id="registerLink">Register</a></li>
+          <li>
+            <a href="Index.html" id="logoutLink" style="display: none"
+              >Logout</a
+            >
+          </li>
         </ul>
       </nav>
+      <script src="navbar.js"></script>
     </header>
 
     <main>
@@ -71,6 +81,29 @@
     <footer>
       <p>© 2025 Simple Blog Platform. All rights reserved.</p>
     </footer>
+
+    <script>
+      const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+      if (isLoggedIn === "true") {
+        document.getElementById("addPostLink").style.display = "block";
+        document.getElementById("contactLink").style.display = "block";
+
+        document.getElementById("loginLink").style.display = "none";
+        document.getElementById("logoutLink").style.display = "block";
+      } else {
+        // Hide protected links
+        document.getElementById("addPostLink").style.display = "none";
+        document.getElementById("contactLink").style.display = "none";
+        document.getElementById("logoutLink").style.display = "none";
+      }
+
+      // Logout functionality
+      document.getElementById("logoutLink").addEventListener("click", () => {
+        localStorage.removeItem("isLoggedIn");
+        window.location.reload();
+      });
+    </script>
 
     <script src="js/main.js"></script>
   </body>

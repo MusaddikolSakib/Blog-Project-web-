@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6c63ff, #42a5f5);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-container {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.pass-wrapper {
+    position: relative;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn {
+    width: 100%;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background: #5a52e0;
+}
+.switch-link {
+    margin-top: 15px;
+}
+.switch-link a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+.switch-link a:hover {
+    text-decoration: underline;
+}
