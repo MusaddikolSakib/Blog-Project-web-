@@ -12,7 +12,7 @@
       <nav>
         <div class="menu-toggle" id="menuToggle">☰</div>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="Index.html" id="homeLink">Home</a></li>
           <li><a href="about/about.html">About</a></li>
           <li>
             <a href="add-post/add-post.html" id="addPostLink">Add Post</a>
@@ -21,7 +21,11 @@
           <li>
             <a href="login,registration/login.html" id="loginLink">Login</a>
           </li>
-          <li><a href="login,registration/register.html" id="registerLink">Register</a></li>
+          <li>
+            <a href="login,registration/register.html" id="registerLink"
+              >Register</a
+            >
+          </li>
           <li>
             <a href="Index.html" id="logoutLink" style="display: none"
               >Logout</a
@@ -32,50 +36,57 @@
       <script src="navbar.js"></script>
     </header>
 
-    <main>
+    <main class="main-content">
       <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search posts..." />
       </div>
 
-      <section class="blog-list">
-        <article class="blog-card">
-          <img src="image/Post1.jpg" alt="Post 1" />
-          <h2>How to Start Blogging</h2>
-          <p>
-            Learn the basics of blogging and how to share your thoughts with the
-            word
-          </p>
-          <button onclick="location.href='post/post.html'">Read More</button>
-        </article>
+      <div class="latest-posts-container">
+        <h2>Latest Posts</h2>
+        <div id="postContainer" class="post-grid"></div>
+      </div>
 
-        <article class="blog-card">
-          <img src="image/Post2.jpg" alt="Post 2" />
-          <h2>Writing Engaging Content</h2>
-          <p>Tips and tricks for writing posts your readers will love.</p>
-          <button onclick="location.href='post/post.html'">Read More</button>>
-        </article>
+      <div class="content-area-wrapper">
+        <section class="blog-list">
+          <article class="blog-card">
+            <img src="image/Post1.jpg" alt="Post 1" />
+            <h2>How to Start Blogging</h2>
+            <p>
+              Learn the basics of blogging and how to share your thoughts with
+              the word
+            </p>
+            <button onclick="location.href='post/post.html'">Read More</button>
+          </article>
 
-        <article class="blog-card">
-          <img src="image/Post3.jpg" alt="Post 3" />
-          <h2>Designing a Simple Blog</h2>
-          <p>A quick guide to building a clean and modern blog layout.</p>
-          <button onclick="location.href='post/post.html'">Read More</button>
-        </article>
+          <article class="blog-card">
+            <img src="image/Post2.jpg" alt="Post 2" />
+            <h2>Writing Engaging Content</h2>
+            <p>Tips and tricks for writing posts your readers will love.</p>
+            <button onclick="location.href='post/post.html'">Read More</button>>
+          </article>
 
-        <article class="blog-card">
-          <img src="image/Post4.jpg" alt="Post 4" />
-          <h2>Photography Blog</h2>
-          <p>A quick oberview of butey of the nature.</p>
-          <button onclick="location.href='post/post.html'">Read More</button>
-        </article>
+          <article class="blog-card">
+            <img src="image/Post3.jpg" alt="Post 3" />
+            <h2>Designing a Simple Blog</h2>
+            <p>A quick guide to building a clean and modern blog layout.</p>
+            <button onclick="location.href='post/post.html'">Read More</button>
+          </article>
 
-        <article class="blog-card">
-          <img src="image/Post5.jpg" alt="Post 4" />
-          <h2>Animals Blog</h2>
-          <p>A quick oberview of butey of the animels.</p>
-          <button onclick="location.href='post/post.html'">Read More</button>
-        </article>
-      </section>
+          <article class="blog-card">
+            <img src="image/Post4.jpg" alt="Post 4" />
+            <h2>Photography Blog</h2>
+            <p>A quick oberview of butey of the nature.</p>
+            <button onclick="location.href='post/post.html'">Read More</button>
+          </article>
+
+          <article class="blog-card">
+            <img src="image/Post5.jpg" alt="Post 4" />
+            <h2>Animals Blog</h2>
+            <p>A quick oberview of butey of the animels.</p>
+            <button onclick="location.href='post/post.html'">Read More</button>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer>

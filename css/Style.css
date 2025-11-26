@@ -77,11 +77,12 @@ nav ul li a {
 
 
 .search-container {
+  width: 100%;
   text-align: center;
-  margin: 20px 0;
+  margin: 0;
 }
 #searchInput {
-  width: 60%;
+  width: 90%;
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
@@ -93,6 +94,57 @@ nav ul li a {
 #searchInput:focus {
   border-color: #ffcf33;
   box-shadow: 0 0 5px rgba(255, 207, 51, 0.7);
+}
+
+.content-area-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.latest-posts-container {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  order: 1;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+.latest-posts-container h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+.latest-posts-container .post-grid .card {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.blog-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  order: 2;
+  padding: 0;
 }
 
 main{
@@ -114,17 +166,10 @@ nav a:hover{
   color: #ffcf33;
 }
 
-.blog-list {
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 .blog-card {
   background: white;
-  width: 300px;
+  min-width: 300px;
+  flex: 0 1 300px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgb(0, 0, 0,0.1);
   overflow: hidden;
