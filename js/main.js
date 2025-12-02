@@ -101,7 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ------------------ Edit Post ------------------
     window.editPost = function(postId) {
-        alert("Edit post feature coming soon!");
+        window.location.href = `edit-post/edit-post.html?id=${postId}`;
+        //alert("Edit post feature coming soon!");
         // You can later implement a form to edit the post
     }
 
